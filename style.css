@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
 @font-face {
-    font-family: 'MapoFlowerIsland';
+    font-family: 'Barlow Condensed', sans-serif;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-body{font-family: 'MapoFlowerIsland',ng;}
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #8A1800;
+}
 
 .middle {
     display: inline-block;
