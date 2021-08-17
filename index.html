@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="Eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pop เหี้ยไร</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="hw">
+        <img class="middle_div" id="photo" src="./popcat_1.jpeg" width="500" height="500">
+    </div>
+    <h1></p>กดทำเหี้ยไร</h1>
+    <p id="num">0</p>
+</body>
+
+</html>
+<script>
+    let count = false;
+    const imageWrapper = document.getElementById('hw');
+    const image = document.getElementById("photo");
+    const sound = new Audio("./sound.mp3");
+    let num=document.getElementById("num").innerHTML;
+    imageWrapper.addEventListener('click', () => {
+        sound.play();
+        num=parseFloat(num)+1;
+        image.setAttribute("src", count ? "./popcat_1.jpeg" : "./popcat_2.jpeg");
+        count = !count
+        document.getElementById("num").innerHTML=num
+    })
+</script>
