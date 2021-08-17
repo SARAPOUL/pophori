@@ -1,11 +1,7 @@
-
-<!DOCTYPE html>
-<html lang="Eng">
+<!DOCTYPE HTML>
+<html>
+<head>
     <style>
-        body {
-          background-color: lightblue;
-        }
-        
         h1 {
           font-size: 1000%;
           text-align: center;
@@ -14,19 +10,26 @@
         }
         
         p {
-          font-family: verdana;
           font-size: 700%;
           text-align: center;
           color: black;
           text-shadow: 2px 2px 5px white;
           
         }
-        img {
+        .imgpic {
             position: absolute;
             z-index: -1;
+            width:100%; 
+            height:100%; 
         }
-        </style>
-<head>
+        .imgyt {
+            position: absolute;
+            width:100px;
+            z-index: 0;
+            padding-left: 10px; 
+        }
+
+    </style>
     <meta charset="utf-8">
     <title>Pop HØRI</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
@@ -34,9 +37,10 @@
 </head>
 
 <body>
+    <a href="https://www.youtube.com/channel/UCMvc8BlQ7r5gRbz-D2EY0LA"  target="_blank"><img class="imgyt" id="" src="./youtube.png" ></a>
     <div id="hw">
-        <img class="middle_div" id="photo" src="./popkim_1.png" width="100%" height="100%">
-        <h1>Pop HØRI</h1>
+        <img class="middle_div imgpic" id="photo" src="./popkim_1.png" >
+        <h1>POP HØRI</h1>
         <p id="num">0</p>
     </div>
    
@@ -56,4 +60,4 @@
         count = !count
         document.getElementById("num").innerHTML=num 
     })
-</script>
+</script> 
