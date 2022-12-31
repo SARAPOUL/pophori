@@ -39,7 +39,7 @@
 <body>
     <a href="https://www.youtube.com/channel/UCMvc8BlQ7r5gRbz-D2EY0LA"  target="_blank"><img class="imgyt" id="" src="./youtube.png" ></a>
     <div id="hw">
-        <img class="middle_div imgpic" id="photo" src="./popkim_1.png" >
+        <img class="middle_div imgpic" id="photo" src="./popkim_1.png" onclick="myFunction()" >
         <h1>POP HØRI</h1>
         <p id="num">0</p>
     </div>
@@ -53,7 +53,7 @@
     const image = document.getElementById("photo");
     const sound = new Audio("./popping.mp3");
     let num=document.getElementById("num").innerHTML;
-    imageWrapper.addEventListener('click', () => {
+    const myFunction = () => {
         sound.play();
         num=parseFloat(num)+1;
         image.setAttribute("src", count ? "./popkim_1.png" : "./popkim_2.png");
